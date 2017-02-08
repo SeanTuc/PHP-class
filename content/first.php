@@ -47,4 +47,3 @@
 </html>
 
 
---  , cd:/directory ,   status   , git add .   , git commit   (i = able to type) esc  then :wq  git remote push  <add name> <add url>
