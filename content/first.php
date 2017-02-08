@@ -19,7 +19,7 @@
 			?>
 			<nav id="global">
 				<ul>
-                    <li><a href="index.html" title="Home">Home</a></li>
+                    <li><a href="../index.html" title="Home">Home</a></li>
 					<li><a href="createAccount.php" title="Create Account">Create Account</a></li>
 					<li><a href="login.php" title="Login">Login</a></li>
 					<li><?php
@@ -47,4 +47,4 @@
 </html>
 
 
--- 
+--  , cd:/directory ,   status   , git add .   , git commit   (i = able to type) esc  then :wq  git remote push  <add name> <add url>
