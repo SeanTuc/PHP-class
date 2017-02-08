@@ -11,7 +11,7 @@
 				<ul>
                     <li><a href="index.html" title="Home">Home</a></li>
 					<li><a href="createAccount.php" title="Create Account">Create Account</a></li>
-					<li><a href="login.php" title="Login">Login </a></li>
+					<li><a href="login.php" title="Login">Login</a></li>
 					<li><a href="myAccount.php" title="My Account">My Account</a></li>
 				</ul>
 			</nav>

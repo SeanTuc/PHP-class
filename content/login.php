@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="app.css" type="text/css" />
 	</head>
         <header>
-            <h1>PHP Login</h1>
+            <h1>PHP Login </h1>
 			<nav id="global">
 				<ul>
                     <li><a href="index.html" title="Home">Home</a></li>
