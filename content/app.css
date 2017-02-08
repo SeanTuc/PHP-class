@@ -1,0 +1,51 @@
+html {
+	background-color: #39989A;
+}
+body {
+	font-size: 100%;
+	font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+	color: #333;
+	width: 760px;
+	background-color: #FFF;
+	margin: 20px auto;
+	padding: 2em 2em 4em 2em;
+	border-radius: 5px;
+}
+h2 {
+	color: #C88039;
+}
+fieldset {
+	border: 1px solid #AAA;
+	margin: 1em 0;
+}
+legend {
+	font-size: 75%;
+	text-transform: uppercase;
+	color: #AAA;
+}
+fieldset div {
+	margin-bottom: 0.5em;
+}
+div label {
+	display: block;
+	width: 200px;
+	text-align: left;
+	padding-right: 1em;
+	padding-bottom: 1em;
+}
+
+label.error {
+	color: red;
+	float: right;
+}
+small {
+	font-size: 70%;
+}
+li {
+	width: 18%;
+	margin-left: 20px;
+	display: inline-block;
+	position: relative;
+    border: 2px solid black;
+    text-align: center;
+}
