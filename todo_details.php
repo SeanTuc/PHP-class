@@ -1,22 +1,24 @@
 <?php
 session_start();
-include_once('database.php'); // include the database connection file
+include_once('database.php');
+// grabs $_GET's and session variables
 $_SESSION['tableID'];
-$contactID = $_GET["contactID"]; // assigns the contactID from the URL
+$usernameID = $_GET["usernameID"];
 $tableName = $_SESSION['tableID'];
 $nameHolder = $_SESSION['userid'];
 
-if($contactID == 0) {
-    $contact = null;
+if($usernameID == 0) {
+    //checking for valid username
+    $todolist = null;
     $isEmpty = 1;
 } else {
     $isEmpty = 0;
-    $query = "SELECT * FROM $tableName WHERE id = '$contactID' "; // SQL statement
+    $query = "SELECT * FROM $tableName WHERE id = '$usernameID' "; // SQL statement
     $statement = $db->prepare($query); // encapsulate the sql statement
 
-    $statement->execute(); // run on the db server
-    $contact = $statement->fetch(); // returns only one record
-    $statement->closeCursor(); // close the connection
+    $statement->execute();
+    $todolist = $statement->fetch();
+    $statement->closeCursor();
 }
 ?>
 <!DOCTYPE html>
@@ -62,45 +64,45 @@ if($contactID == 0) {
                     <tr>
                         <th></th>
                         <th><div class="form-group">
-                                <label for="IDTextField" hidden>contact ID</label>
+                                <label for="IDTextField" hidden>Table ID</label>
                                 <input type="hidden" class="form-control" id="IDTextField" name="IDTextField"
-                                       placeholder="contact ID" value="<?php echo $contact['id']; ?>">
+                                       placeholder="contact ID" value="<?php echo $todolist['id']; ?>">
                             </div>
                         </th>
                     </tr>
                     <tr>
-                        <th> <?php if($isEmpty == 1 or $contact['name']== null ){echo "<span class=' glyphicon glyphicon-play' aria-hidden='true'></span>";} else{ echo "<span class='glyphicon glyphicon-ok' aria-hidden='true'></span>";}     ?></th>
+                        <th> <?php if($isEmpty == 1 or $todolist['name']== null ){echo "<span class=' glyphicon glyphicon-play' aria-hidden='true'></span>";} else{ echo "<span class='glyphicon glyphicon-ok' aria-hidden='true'></span>";}     ?></th>
                         <th><div class="form-group">
-                                <label for="NameTextField">User Name</label>
-                                <input type="text" class="form-control" id="NameTextField"  name="NameTextField"
-                                       placeholder="contact Name" required  value="<?php echo $nameHolder; ?>">
+                                <label for="nameTextField">User Name</label>
+                                <input type="text" class="form-control" id="nameTextField"  name="nameTextField"
+                                       placeholder="Contact Name" required  value="<?php echo $nameHolder; ?>">
                             </div>
                         </th>
                     </tr>
                     <tr>
-                        <th> <?php if($isEmpty == 1 or $contact['Homework']== null ){echo "<span class=' glyphicon glyphicon-play' aria-hidden='true'></span>";} else{ echo "<span class='glyphicon glyphicon-ok' aria-hidden='true'></span>";}     ?></th>
+                        <th> <?php if($isEmpty == 1 or $todolist['Homework']== null ){echo "<span class=' glyphicon glyphicon-play' aria-hidden='true'></span>";} else{ echo "<span class='glyphicon glyphicon-ok' aria-hidden='true'></span>";}     ?></th>
                         <th><div class="form-group">
-                                <label for="lastNameTextField">Home Work</label>
-                                <input type="text" class="form-control" id="lastNameTextField"  name="lastNameTextField"
-                                       placeholder="Subjects homework that was completed"  value="<?php echo $contact['Homework']; ?>">
+                                <label for="workNameTextField">Home Work</label>
+                                <input type="text" class="form-control" id="workNameTextField"  name="workNameTextField"
+                                       placeholder="Subject's homework that was completed"  value="<?php echo $todolist['Homework']; ?>">
                             </div></th>
                     </tr>
                     <tr>
-                        <th>  <?php if($isEmpty == 1 or $contact['feedPet']== null ){echo "<span class=' glyphicon glyphicon-play' aria-hidden='true'></span>";} else{ echo "<span class='glyphicon glyphicon-ok' aria-hidden='true'></span>";}     ?></th>
+                        <th>  <?php if($isEmpty == 1 or $todolist['feedPet']== null ){echo "<span class=' glyphicon glyphicon-play' aria-hidden='true'></span>";} else{ echo "<span class='glyphicon glyphicon-ok' aria-hidden='true'></span>";}     ?></th>
                         <th>
                             <div class="form-group">
-                                <label for="emailTextField">Pet Care</label>
-                                <input type="text" class="form-control" id="emailTextField" name="emailTextField"
-                                       placeholder="Amount of time spent with pet"   value="<?php echo $contact['feedPet']; ?>">
+                                <label for="petTextField">Pet Care</label>
+                                <input type="text" class="form-control" id="petTextField" name="petTextField"
+                                       placeholder="Amount of time spent with pet"   value="<?php echo $todolist['feedPet']; ?>">
                             </div></th>
                     </tr>
                     <tr>
-                        <th>  <?php if($isEmpty == 1 or $contact['workoutTime']== null ){echo "<span class=' glyphicon glyphicon-play' aria-hidden='true'></span>";} else{ echo "<span class='glyphicon glyphicon-ok' aria-hidden='true'></span>";}     ?></th>
+                        <th>  <?php if($isEmpty == 1 or $todolist['workoutTime']== null ){echo "<span class=' glyphicon glyphicon-play' aria-hidden='true'></span>";} else{ echo "<span class='glyphicon glyphicon-ok' aria-hidden='true'></span>";}     ?></th>
                         <th>
                             <div class="form-group">
-                                <label for="CostTextField">Workout time</label>
-                                <input type="text" class="form-control" id="CostTextField" name="CostTextField"
-                                       placeholder="Amount of time worked out"  value="<?php echo $contact['workoutTime']; ?>">
+                                <label for="workoutTextField">Workout time</label>
+                                <input type="text" class="form-control" id="workoutTextField" name="workoutTextField"
+                                       placeholder="Amount of time worked out"  value="<?php echo $todolist['workoutTime']; ?>">
                             </div>
                         </th>
                     </tr>

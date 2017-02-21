@@ -1,5 +1,6 @@
 <?php
 session_start();
+// setting database variables (custom connection) due to errors inserting information with include;
 $servername = "us-cdbr-azure-southcentral-f.cloudapp.net";
 $username = 'b443d4f6b8b1a7';
 $password = '7e42bc2c';
@@ -7,33 +8,30 @@ $dbname = "sean_tucker";
 $tableName = $_SESSION['tableID'];
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    // setting conn attributes on how to handle mySQL returns;
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    //setting variable values;
     $isEmpty = filter_input(INPUT_POST, "isEmpty");
-    $contactName = filter_input(INPUT_POST, "NameTextField"); //$_POST["NameTextField"];
-    $contactLastName = filter_input(INPUT_POST, "lastNameTextField"); //$_POST["NameTextField"];
-    $contactEmail = filter_input(INPUT_POST, "emailTextField"); //$_POST["NameTextField"];
-    $contactCost = filter_input(INPUT_POST, "CostTextField"); //$_POST["CostTextField"];
+    $contactName = filter_input(INPUT_POST, "NameTextField");
+    $homeworkDone = filter_input(INPUT_POST, "workNameTextField");
+    $petTime = filter_input(INPUT_POST, "petTextField");
+    $workoutTime = filter_input(INPUT_POST, "workoutTextField");
 
-    /*id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    userName VARCHAR(30),
-    name VARCHAR(50),
-    Homework VARCHAR(50),
-    feedPet VARCHAR(50),
-    workoutTime VARCHAR(50)
-*/
+
+    // testing to see if i am adding a new row into the table or editing a current one;
     if ($isEmpty == "1") {
         $sql = "INSERT INTO $tableName ( name, Homework, feedPet, workoutTime) 
-VALUES ('$contactName', '$contactLastName', '$contactCost', '$contactEmail')";
+VALUES ('$contactName', '$homeworkDone', '$workoutTime', '$petTime')";
 
         $conn->exec($sql);
-        echo "New record created successfully";
+        echo "Record created successfully";
     } else {
         $contactID = filter_input(INPUT_POST, "IDTextField"); // $_POST["IDTextField"];
-        $sql = "UPDATE $tableName SET name = '$contactName', Homework = '$contactLastName', feedPet = '$contactCost', workoutTime = '$contactEmail'
+        $sql = "UPDATE $tableName SET name = '$contactName', Homework = '$homeworkDone', feedPet = '$petTime', workoutTime = '$workoutTime'
  WHERE id = $contactID "; // SQL statement
 
         $conn->exec($sql);
-        echo "New record created successfully";
+        echo "Record uodated successfully";
 
     }
 
@@ -42,6 +40,7 @@ VALUES ('$contactName', '$contactLastName', '$contactCost', '$contactEmail')";
 catch(PDOException $e)
 {
     echo $sql . "<br>" . $e->getMessage();
+
 }
 $conn = null;
 // redirect to index page

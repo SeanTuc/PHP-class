@@ -9,32 +9,34 @@ $dbname = "sean_tucker";
 $new = "no";
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    // set the PDO error mode to exception
+    // set the PDO error mode to exception;
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $loginName = filter_input(INPUT_POST, "userTextField"); //$_POST["NameTextField"];
-    $loginPassword = filter_input(INPUT_POST, "passwordTextField"); //$_POST["NameTextField"];
-    $new = filter_input(INPUT_POST, "existingUser"); //$_POST["NameTextField"];
+    // grabbing $_POST's;
+    $loginName = filter_input(INPUT_POST, "userTextField");
+    $loginPassword = filter_input(INPUT_POST, "passwordTextField");
+    $new = filter_input(INPUT_POST, "existingUser");
+    // trouble shooting;
     echo "<br>";
     echo filter_input(INPUT_POST, "userTextField") . "<br> omg work<br>" ;
     echo $new;
 
 
-
-    $query = "SELECT * FROM login "; // SQL statement
-    $statement = $conn->prepare($query); // encapsulate the sql statement
-    $statement->execute(); // run on the db server
-    $contacts = $statement->fetchAll(); // returns an array
-    $statement->closeCursor(); // close the connection
+    // grabbing data from mySQL
+    $query = "SELECT * FROM login ";
+    $statement = $conn->prepare($query);
+    $statement->execute();
+    $loginInfos = $statement->fetchAll();
+    $statement->closeCursor();
     $missing = false;
     $counter = 0;
 
 
-    foreach($contacts as $contact) :
-        echo $contact['username'] . "   user <br>";
-        echo $contact['password'] . " password <br>";
-        echo " password =" . strcasecmp($contact['password'], $loginPassword);
-        echo " username =" . strcasecmp($contact['username'], $loginName);
-        if ((strcasecmp($contact['password'], $loginPassword)==0) && (strcasecmp($contact['username'], $loginName)==0)) {
+    foreach($loginInfos as $loginInfo) :
+        echo $loginInfo['username'] . "   user <br>";
+        echo $loginInfo['password'] . " password <br>";
+        echo " password =" . strcasecmp($loginInfo['password'], $loginPassword);
+        echo " username =" . strcasecmp($loginInfo['username'], $loginName);
+        if ((strcasecmp($loginInfo['password'], $loginPassword)==0) && (strcasecmp($loginInfo['username'], $loginName)==0)) {
             $header = 'Location: todo.php?loginName=' . $loginName;
             $counter = 1;
 
@@ -48,7 +50,7 @@ try {
              header($header);
 
         } //not sure if this will work
-        elseif (strcasecmp($contact['username'], $loginName)==0) {
+        elseif (strcasecmp($loginInfo['username'], $loginName)==0) {
             $counter = 1;
             echo "elseif";
             header('Location: invalidUserName.php');
@@ -84,8 +86,9 @@ try {
         $conn->exec($sql);
         $header = 'Location: accountCreated.php';
         header($header);
-        echo "Table todo list was created successfully   STOOOOOOOOOOOOOOOOPPPPPPPPPPPPP";
+        echo "Table todo list was created successfully   STOOOOOOOOOOOOOOOOPPPPPPPPPPPPP"; // trouble shooting purposes;
     }
+    //testing fail safes
 /*    elseif ($counter == 1)
     {
         echo "username taken failed    STTTTTTTOOOOOOOOOOOOPPPPPPPPPPP ";
@@ -103,7 +106,8 @@ catch(PDOException $e)
 {
     echo  "<br>" . $e->getMessage();
 }
-echo "here  end SSTTTTTOOOOPPPPPP";
+
+echo "here  end SSTTTTTOOOOPPPPPP"; //trouble shooting purposes ;
 $header = 'Location: todo.php?loginName=' . $loginName;
 echo $header;
 $conn = null;

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="app.css" type="text/css" >
 </head>
 <header>
-    <h1>PHP Login </h1>
+    <h1>Todo List </h1>
     <nav id="global">
         <ul>
             <li><a href="index.php" title="Home">Home</a></li>
@@ -19,7 +19,7 @@
 </header>
 <body>
 <h1>You Have Made An Account </h1>
-<p> See your Tasks</p>
+<p> See My Tasks</p>
 
 
 

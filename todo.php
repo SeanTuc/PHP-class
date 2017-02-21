@@ -9,12 +9,13 @@ if ($_SESSION['userid'] == null)
 $new = $_SESSION['userid'];
 $tableName = $_SESSION['tableID'];
 
-
-$query = "SELECT * FROM $tableName "; // SQL statement
-$statement = $db->prepare($query); // encapsulate the sql statement
-$statement->execute(); // run on the db server
-$todos = $statement->fetchAll(); // returns an array
-$statement->closeCursor(); // close the connection
+//mySQL statements;
+$query = "SELECT * FROM $tableName ";
+$statement = $db->prepare($query);
+$statement->execute();
+$todos = $statement->fetchAll();
+$statement->closeCursor();
+//setting variables;
 $missing = false;
 $counter = 0;
 $daycount = 0;
@@ -26,16 +27,18 @@ $day = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saterd
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Assignment One</title>
-    <!-- CSS Section -->
+    <title>Todo List</title>
+    <!-- CSS -->
 
     <link rel="stylesheet" href="Scripts/lib/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="Scripts/lib/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="Content/app.css">
+
+
 </head>
 <header>
-    <h1 style="text-align: center;">PHP Login </h1>
+    <h1 style="text-align: center;">Todo Login </h1>
     <nav class="navbar navbar">
         <div class="container">
         <ul class="nav nav-tabs nav-justified">
@@ -116,7 +119,7 @@ $day = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saterd
                             }
                             ?></td>
                         <td>
-
+                            <!-- Adds button to edit todo details and tracks how many are missing data  -->
                         <ul class="nav nav-pills" role="tablist">
                                 <li role="presentation"><a href="todo_details.php?contactID=<?php echo $todo['id'] ?>"><?php if ($missing== false)
                                         {
@@ -133,13 +136,7 @@ $day = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saterd
                         <td><?php
 
                             ?></td>
-
-
-                        <!-- This line sends the contactID to the contact_details page -->
-
-
-
-                        <td><a class="btn btn-danger" href="todoDayDelete.php?contactID=<?php echo $todo['id'] ?>"><i class="fa fa-trash-o"></i> Delete</a></td>
+                        <td><a class="btn btn-danger" href="todoDayDelete.php?usernameID=<?php echo $todo['id'] ?>"><i class="fa fa-trash-o"></i> Delete</a></td>
                     </tr>
                 <?php endforeach; ?>
 
@@ -150,9 +147,11 @@ $day = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saterd
     </div>
 </div>
 
-<!-- JavaScript Section -->
+<!-- JavaScript Section
 <script src="../Scripts/lib/jquery/dist/jquery.min.js"></script>
 <script src="../Scripts/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../Scripts/app.js"></script>
+
+-->
 </body>
 </html>

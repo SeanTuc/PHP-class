@@ -4,11 +4,11 @@ session_destroy()?>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Assignment One</title>
+    <title>Todo Tasks</title>
     <link rel="stylesheet" href="app.css" type="text/css" >
 </head>
 <header>
-    <h1 style="text-align: center;">PHP Login </h1>
+    <h1 style="text-align: center;">Todo Tasks Login </h1>
     <nav class="navbar navbar">
         <div class="container">
             <ul class="nav nav-tabs nav-justified">
@@ -25,7 +25,8 @@ session_destroy()?>
         <table class="table">
             <tr>
                 <th><div class="form-group">
-                        <label for="oldUser" hidden>Login</label>
+                        <label for="oldUser" hidden></label>
+                        <!-- early validation for directing to create a new account page or login -->
                         <input type="hidden" class="form-control" id="existingUser" name="existingUser"
                                placeholder="existingUser" value="<?php echo '2'; ?>" >
                     </div>
@@ -49,7 +50,7 @@ session_destroy()?>
                 </th>
             </tr>
         </table>
-    <button type="submit" id="SubmitButton" class="btn btn-primary">Submit</button>
+    <button type="submit" id="SubmitButton" class="btn btn-primary">Login</button>
 
 </form>
 
