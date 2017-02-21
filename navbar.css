@@ -1,0 +1,11 @@
+ul li {
+    width: 18%;
+    margin-left: 20px;
+    display: inline-block;
+    position: relative;
+    border: 2px solid black;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
