@@ -39,7 +39,7 @@ try {
             $counter = 1;
 
             echo $header;
-            echo "login success  STOOOOOOOOOOOOOOOOPPPPPP"  ;
+            echo "login success  destination = " . $header  ;
             $_SESSION['userid'] = $loginName;
             $tableName =  $loginName . "TodoList";
 
