@@ -83,7 +83,7 @@ try {
         // use exec() because no results are returned
         $conn->exec($sql);
         $header = 'Location: accountCreated.php';
-        //header($header);
+        header($header);
         echo "Table todo list was created successfully   STOOOOOOOOOOOOOOOOPPPPPPPPPPPPP";
     }
     elseif ($counter == 1)

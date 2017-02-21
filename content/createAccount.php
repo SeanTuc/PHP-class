@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Assignment  One</title>
-        <link rel="stylesheet" href="app.css" type="text/css" />
+        <link rel="stylesheet" href="../app.css" type="text/css" />
 	</head>
         <header>
             <h1>PHP Login</h1>
@@ -28,19 +28,13 @@
                             <label for="lname">Last Name</label>
                             <input type="text" name="lname" id="lname" required size="25" maxlength="50" placeholder="Last Name" /> 
                         
-                            <label for="user">User Name</label>
-                            <input type="text" name="user" id="user" required size="25" maxlength="50" placeholder="User Name" /> 
+                            <label for="user">Phone Number</label>
+                            <input type="text" name="phoneNumber" id="phoneNumber" required size="25" maxlength="25" placeholder="Phone Number" />
                         
                             <label for="email">Email address</label>
                             <input id="email" type="email" name="email" placeholder="email@hotmail.com" />
-                        
-                            <label for="password">Password</label>
-                            <input id="password" type="password" name="password" />
-                        
-                            <label for="New password">Retype Password</label>
-                            <input id="New password" type="password" name="New password" />
-                            
-                            <input type="submit" name="submit" value="Create Account"/>
+
+                            <a class="btn btn-primary" href="addContact.php"> Add Contact</a>
                         </form>
                     </div>       
                 </fieldset>

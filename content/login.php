@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Assignment One</title>
-        <link rel="stylesheet" href="app.css" type="text/css" />
+        <link rel="stylesheet" href="../app.css" type="text/css" />
 	</head>
         <header>
             <h1>PHP Login </h1>

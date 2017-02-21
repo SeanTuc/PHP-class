@@ -1,18 +1,20 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<title>Assignment  One</title>
-        <link rel="stylesheet" href="app.css" type="text/css" />
+        <link rel="stylesheet" href="../app.css" type="text/css" />
 	</head>
         <header>
-			<?php
+                <?php
 				$userName = "Admin";
 				$password = "Admin";
 				$validate = false;
 				if (($_POST["name"] == $userName) && ($_POST["password"] == $password))
-					{echo "<h1>Logged In Succesful</h1>";
-					$validate = true;}
+					{
+                        //$validate = true;
+					    echo "<h1>Logged In Succesful</h1> ";
+					}
 				else 
 				{echo "<h1>Logged In Not Succesful</h1>";}
 
@@ -47,4 +49,3 @@
 </html>
 
 
-(header location
