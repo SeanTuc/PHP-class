@@ -26,9 +26,11 @@ if($usernameID == 0) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>contact Details</title>
+    <meta name="description" content="Todo Details">
+    <meta name="author" content="Sean Tucker #200352573">
+    <title>Todo Details</title>
     <!-- CSS Section -->
-
+    <!-- using bootstrap CSS-->
     <link rel="stylesheet" href="Scripts/lib/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="Scripts/lib/font-awesome/css/font-awesome.css">
@@ -83,7 +85,7 @@ if($usernameID == 0) {
                     <tr>
                         <th> <?php if($isEmpty == 1 or $todolist['Homework']== null ){echo "<span class=' glyphicon glyphicon-play' aria-hidden='true'></span>";} else{ echo "<span class='glyphicon glyphicon-ok' aria-hidden='true'></span>";}     ?></th>
                         <th><div class="form-group">
-                                <label for="workNameTextField">Home Work</label>
+                                <label for="workNameTextField">Subject's Home Work Completed</label>
                                 <input type="text" class="form-control" id="workNameTextField"  name="workNameTextField"
                                        placeholder="Subject's homework that was completed"  value="<?php echo $todolist['Homework']; ?>">
                             </div></th>
@@ -92,7 +94,7 @@ if($usernameID == 0) {
                         <th>  <?php if($isEmpty == 1 or $todolist['feedPet']== null ){echo "<span class=' glyphicon glyphicon-play' aria-hidden='true'></span>";} else{ echo "<span class='glyphicon glyphicon-ok' aria-hidden='true'></span>";}     ?></th>
                         <th>
                             <div class="form-group">
-                                <label for="petTextField">Pet Care</label>
+                                <label for="petTextField">Time spent with Pet </label>
                                 <input type="text" class="form-control" id="petTextField" name="petTextField"
                                        placeholder="Amount of time spent with pet"   value="<?php echo $todolist['feedPet']; ?>">
                             </div></th>
@@ -101,7 +103,7 @@ if($usernameID == 0) {
                         <th>  <?php if($isEmpty == 1 or $todolist['workoutTime']== null ){echo "<span class=' glyphicon glyphicon-play' aria-hidden='true'></span>";} else{ echo "<span class='glyphicon glyphicon-ok' aria-hidden='true'></span>";}     ?></th>
                         <th>
                             <div class="form-group">
-                                <label for="workoutTextField">Workout time</label>
+                                <label for="workoutTextField">Time spent Working out </label>
                                 <input type="text" class="form-control" id="workoutTextField" name="workoutTextField"
                                        placeholder="Amount of time worked out"  value="<?php echo $todolist['workoutTime']; ?>">
                             </div>
@@ -112,7 +114,7 @@ if($usernameID == 0) {
                 <button type="submit" id="SubmitButton" class="btn btn-primary">Submit</button>
 
             </form>
-
+            <!-- calls the confirm  function on the action click of the link -->
             <a  class="btn btn-danger" href="todo.php" onclick="return confirm('You want to go back and not commit data?')"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>Go Back</a>
         </div>
     </div>

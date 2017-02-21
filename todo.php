@@ -27,6 +27,8 @@ $day = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saterd
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Todo List">
+    <meta name="author" content="Sean Tucker #200352573">
     <title>Todo List</title>
     <!-- CSS -->
 
@@ -77,7 +79,7 @@ $day = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saterd
                             if ($todo['name'] == false)
                             {
                                 $missing = true ;
-                                echo "Missing";
+                                echo "Missing1";
                                 $counter = $counter +1;
                             }
                             else
@@ -137,6 +139,7 @@ $day = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saterd
                         <td><?php
 
                             ?></td>
+                        <!-- calls the confirm  function on the action click of the link -->
                         <td><a  class="btn btn-danger" href="todoDayDelete.php?usernameID=<?php echo $todo['id'] ?>" onclick="return confirm('Are you sure you want to delete it?')"><i class="fa fa-trash-o"></i> Delete</a></td>
                     </tr>
                 <?php endforeach; ?>

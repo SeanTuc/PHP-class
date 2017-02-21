@@ -3,8 +3,13 @@ session_destroy()?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Todo Tasks</title>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Todo Login">
+    <meta name="author" content="Sean Tucker #200352573">
+    <title>Todo Login</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="app.css" type="text/css" >
 </head>
 <header>

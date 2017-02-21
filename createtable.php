@@ -9,7 +9,7 @@ $dbname = "sean_tucker";
 $new = "no";
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    // set the PDO error mode to exception;
+    // set the way to deal with returns -> error mode to exception;
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     // grabbing $_POST's;
     $loginName = filter_input(INPUT_POST, "userTextField");

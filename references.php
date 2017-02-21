@@ -2,10 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Todo List">
     <meta name="author" content="Sean Tucker #200352573">
     <title>References</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="app.css" type="text/css" >
 </head>
 <header>
@@ -21,11 +24,9 @@
         </ul>
     </nav>
 </header>
-<body><p><h2>Help and CSS from </h2>
-www.w3schools.com <br>
-http://getbootstrap.com <br>
-http://stackoverflow.com <br>
-
+<body>
+<h2>PHP and CSS help from: </h2><p> www.w3schools.com <br>http://stackoverflow.com <br>
+ Special thanks for the open source CSS from http://getbootstrap.com <br>
 </p>
 
 

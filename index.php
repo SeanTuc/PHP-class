@@ -2,8 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Todo Tasks</title>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Todo Landing Page">
+    <meta name="author" content="Sean Tucker #200352573">
+    <title>Todo Tasks Welcome</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="app.css" type="text/css" >
 </head>
 <header>
@@ -19,7 +23,8 @@
         </ul>
     </nav>
 </header>
-<body><p><h2>Welcome to the "todo" list.</h2> It is an easy way to keep track of what you have done and how much you have done.
+<body>
+<h2>Welcome to the "todo" list.</h2><p> It is an easy way to keep track of what you have done and how much you have done.
 To try out your todo list just sign in. If you do not have an account already just type in your desired username and password
 and click sign in. Your todo list will keep track of your time working out, your time spent with your pet and what homework you did
 each day.

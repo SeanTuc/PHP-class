@@ -12,7 +12,7 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     //setting variable values;
     $isEmpty = filter_input(INPUT_POST, "isEmpty");
-    $contactName = filter_input(INPUT_POST, "NameTextField");
+    $contactName = filter_input(INPUT_POST, "nameTextField");
     $homeworkDone = filter_input(INPUT_POST, "workNameTextField");
     $petTime = filter_input(INPUT_POST, "petTextField");
     $workoutTime = filter_input(INPUT_POST, "workoutTextField");

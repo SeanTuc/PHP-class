@@ -2,8 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Todo List</title>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Login Failure">
+    <meta name="author" content="Sean Tucker #200352573">
+    <title>Login Fail</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="app.css" type="text/css" >
 </head>
 <header>
