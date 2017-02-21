@@ -43,8 +43,8 @@ small {
 	font-size: 70%;
 }
 li {
-	width: 18%;
-	margin-left: 20px;
+	width: 16%;
+	margin-left: 10px;
 	display: inline-block;
 	position: relative;
     border: 2px solid black;
