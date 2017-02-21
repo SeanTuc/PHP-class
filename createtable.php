@@ -86,7 +86,7 @@ try {
         header($header);
         echo "Table todo list was created successfully   STOOOOOOOOOOOOOOOOPPPPPPPPPPPPP";
     }
-    elseif ($counter == 1)
+/*    elseif ($counter == 1)
     {
         echo "username taken failed    STTTTTTTOOOOOOOOOOOOPPPPPPPPPPP ";
         $header = 'Location: invalidUserName.php';
@@ -97,7 +97,7 @@ try {
         $header = 'Location: invalidUserName.php';
         //header($header);
 
-    }
+    }*/
 }
 catch(PDOException $e)
 {

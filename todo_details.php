@@ -42,7 +42,7 @@ if($contactID == 0) {
             <ul class="nav nav-tabs nav-justified">
                 <li><a href="index.php" title="Home">Home</a></li>
                 <li><a href="login.php" title="Login">Login</a></li>
-                <li><a href="todo.php" title="My Account">My Account</a></li>
+                <li><a href="todo.php" title="My Account">My Tasks</a></li>
                 <li><a href="logout.php" title="My Account">Log out</a></li>
             </ul>
         </div>
