@@ -2,14 +2,15 @@
 session_start();
 $tableName = $_SESSION['tableID'];
 include_once('database.php');
+//grabs usernameId from url;
+$usernameID = $_GET["usernameID"];
 
-$contactID = $_GET["contactID"]; // assigns the contactID from the URL
-
-if($contactID != false) {
-    $query = "DELETE FROM $tableName WHERE id = $contactID ";
+if($usernameID != false) {
+    // deletes row from table when usernameID is provided;
+    $query = "DELETE FROM $tableName WHERE id = $usernameID ";
     $statement = $db->prepare($query);
-    $success = $statement->execute(); // execute the prepared query
-    $statement->closeCursor(); // close off database
+    $success = $statement->execute();
+    $statement->closeCursor();
     echo "deleted";
 }
 
