@@ -16,7 +16,7 @@ session_destroy()?>
                 <li><a href="login.php" title="Login">Login</a></li>
                 <li><a href="todo.php" title="My Account">My Tasks</a></li>
                 <li><a href="logout.php" title="My Account">Log out</a></li>
-                <li><a href="references.php" title="My Account">Cite Help</a></li>
+                <li><a href="references.php" title="My Account">Cite References</a></li>
             </ul>
         </div>
     </nav>
