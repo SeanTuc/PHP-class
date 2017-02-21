@@ -55,7 +55,7 @@ $day = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saterd
     <div class="row">
         <div class="col-md-offset-3 ">
             <h1><?php echo $new . "'s to do list" ?></h1>
-            <a class="btn btn-primary" href="todo_details.php?contactID=0">
+            <a class="btn btn-primary" href="todo_details.php?usernameID=0">
                 <i class="fa fa-plus"></i> Add New Day</a>
             <br>
             <table class="table">
@@ -136,7 +136,7 @@ $day = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saterd
                         <td><?php
 
                             ?></td>
-                        <td><a class="btn btn-danger" href="todoDayDelete.php?usernameID=<?php echo $todo['id'] ?>"><i class="fa fa-trash-o"></i> Delete</a></td>
+                        <td><a  class="btn btn-danger" href="todoDayDelete.php?usernameID=<?php echo $todo['id'] ?>" onclick="return confirm('Are you sure you want to delete it?')"><i class="fa fa-trash-o"></i> Delete</a></td>
                     </tr>
                 <?php endforeach; ?>
 
@@ -147,11 +147,7 @@ $day = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saterd
     </div>
 </div>
 
-<!-- JavaScript Section
-<script src="../Scripts/lib/jquery/dist/jquery.min.js"></script>
-<script src="../Scripts/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="../Scripts/app.js"></script>
 
--->
+
 </body>
 </html>

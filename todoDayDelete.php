@@ -14,7 +14,7 @@ if($usernameID != false) {
     echo "deleted";
 }
 
-// redirect to index page
+// redirect to todos  list page ;
 header('Location: todo.php');
 
 ?>
