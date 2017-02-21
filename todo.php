@@ -122,7 +122,7 @@ $day = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saterd
                         <td>
                             <!-- Adds button to edit todos details and tracks how many are missing data  -->
                         <ul class="nav nav-pills" role="tablist">
-                                <li role="presentation"><a href="todo_details.php?contactID=<?php echo $todo['id'] ?>"><?php if ($missing== false)
+                                <li role="presentation"><a href="todo_details.php?usernameID=<?php echo $todo['id'] ?>"><?php if ($missing== false)
                                         {
                                             echo "Completed";
                                             echo "<span class='badge'><span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span></span></a>";

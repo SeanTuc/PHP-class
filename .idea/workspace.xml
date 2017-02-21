@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25082a3b-bbe2-41ac-a516-5a9e6f2294e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/references.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accountCreated.php" afterPath="$PROJECT_DIR$/accountCreated.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.css" afterPath="$PROJECT_DIR$/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/invalidUserName.php" afterPath="$PROJECT_DIR$/invalidUserName.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/references.php" afterPath="$PROJECT_DIR$/references.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo.php" afterPath="$PROJECT_DIR$/todo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo_details.php" afterPath="$PROJECT_DIR$/todo_details.php" />
     </list>
@@ -58,20 +53,20 @@
       <file leaf-file-name="todo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="48" column="78" lean-forward="false" selection-start-line="48" selection-start-column="78" selection-end-line="48" selection-end-column="78" />
+            <state relative-caret-position="223">
+              <caret line="124" column="90" lean-forward="false" selection-start-line="124" selection-start-column="90" selection-end-line="124" selection-end-column="90" />
               <folding>
-                <marker date="1487697819065" expanded="true" signature="220:234" ph="SELECT * FRO... ${$tableName}" />
+                <marker date="1487700337536" expanded="true" signature="220:234" ph="SELECT * FRO... ${$tableName}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="references.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="references.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/references.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="85">
+              <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -97,13 +92,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo_details.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="todo_details.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todo_details.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="48" column="82" lean-forward="false" selection-start-line="48" selection-start-column="82" selection-end-line="48" selection-end-column="82" />
+            <state relative-caret-position="119">
+              <caret line="115" column="119" lean-forward="false" selection-start-line="115" selection-start-column="119" selection-end-line="115" selection-end-column="119" />
               <folding>
-                <marker date="1487697825301" expanded="true" signature="358:407" ph="SELECT * FRO... ${$tableName}" />
+                <marker date="1487701512291" expanded="true" signature="358:407" ph="SELECT * FRO... ${$tableName}" />
               </folding>
             </state>
           </provider>
@@ -112,7 +107,7 @@
       <file leaf-file-name="todo_update.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todo_update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-54">
+            <state relative-caret-position="493">
               <caret line="29" column="108" lean-forward="false" selection-start-line="29" selection-start-column="108" selection-end-line="29" selection-end-column="108" />
               <folding>
                 <marker date="1487694794999" expanded="true" signature="984:1116" ph="INSERT INTO ${$tableName}... " />
@@ -189,11 +184,11 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/invalidUserName.php" />
-        <option value="$PROJECT_DIR$/todo.php" />
-        <option value="$PROJECT_DIR$/todo_details.php" />
-        <option value="$PROJECT_DIR$/references.php" />
         <option value="$PROJECT_DIR$/accountCreated.php" />
         <option value="$PROJECT_DIR$/app.css" />
+        <option value="$PROJECT_DIR$/references.php" />
+        <option value="$PROJECT_DIR$/todo.php" />
+        <option value="$PROJECT_DIR$/todo_details.php" />
       </list>
     </option>
   </component>
@@ -322,7 +317,7 @@
       <workItem from="1486575760705" duration="11471000" />
       <workItem from="1487435861648" duration="343000" />
       <workItem from="1487437207400" duration="43642000" />
-      <workItem from="1487645131342" duration="14253000" />
+      <workItem from="1487645131342" duration="17241000" />
     </task>
     <task id="LOCAL-00001" summary="PHP Commit one">
       <created>1486578203181</created>
@@ -457,11 +452,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487696999342</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="added reference page">
+      <created>1487698155823</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1487698155823</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69709000" />
+    <option name="totallyTimeSpent" value="72697000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -516,7 +518,8 @@
     <MESSAGE value="added notes and changed variable names" />
     <MESSAGE value="fixed delete function variables" />
     <MESSAGE value="added javascript" />
-    <option name="LAST_COMMIT_MESSAGE" value="added javascript" />
+    <MESSAGE value="added reference page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added reference page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -841,37 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="48" column="78" lean-forward="false" selection-start-line="48" selection-start-column="78" selection-end-line="48" selection-end-column="78" />
-          <folding>
-            <marker date="1487697819065" expanded="true" signature="220:234" ph="SELECT * FRO... ${$tableName}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/todo_details.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="48" column="82" lean-forward="false" selection-start-line="48" selection-start-column="82" selection-end-line="48" selection-end-column="82" />
-          <folding>
-            <marker date="1487697825301" expanded="true" signature="358:407" ph="SELECT * FRO... ${$tableName}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/todo_update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="29" column="108" lean-forward="false" selection-start-line="29" selection-start-column="108" selection-end-line="29" selection-end-column="108" />
-          <folding>
-            <marker date="1487694794999" expanded="true" signature="984:1116" ph="INSERT INTO ${$tableName}... " />
-            <marker date="1487694794999" expanded="true" signature="1308:1444" ph="UPDATE ${$ta... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/todoDayDelete.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -900,9 +872,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/references.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="85">
+          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="124" column="90" lean-forward="false" selection-start-line="124" selection-start-column="90" selection-end-line="124" selection-end-column="90" />
+          <folding>
+            <marker date="1487700337536" expanded="true" signature="220:234" ph="SELECT * FRO... ${$tableName}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo_update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="108" lean-forward="false" selection-start-line="29" selection-start-column="108" selection-end-line="29" selection-end-column="108" />
+          <folding>
+            <marker date="1487694794999" expanded="true" signature="984:1116" ph="INSERT INTO ${$tableName}... " />
+            <marker date="1487694794999" expanded="true" signature="1308:1444" ph="UPDATE ${$ta... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="115" column="119" lean-forward="false" selection-start-line="115" selection-start-column="119" selection-end-line="115" selection-end-column="119" />
+          <folding>
+            <marker date="1487701512291" expanded="true" signature="358:407" ph="SELECT * FRO... ${$tableName}" />
+          </folding>
         </state>
       </provider>
     </entry>

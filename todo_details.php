@@ -113,16 +113,14 @@ if($usernameID == 0) {
 
             </form>
 
-
+            <a  class="btn btn-danger" href="todo.php" onclick="return confirm('You want to go back and not commit data?')"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>Go Back</a>
         </div>
     </div>
 </div>
 
 
 <!-- JavaScript Section -->
-<script src="../Scripts/lib/jquery/dist/jquery.min.js"></script>
-<script src="../Scripts/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="../Scripts/app.js"></script>
+
 </body>
 </html>
 

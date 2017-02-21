@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta name="description" content="Todo List">
+    <meta name="author" content="Sean Tucker #200352573">
     <title>References</title>
     <link rel="stylesheet" href="app.css" type="text/css" >
 </head>
@@ -19,7 +21,11 @@
         </ul>
     </nav>
 </header>
-<body><p><h2> </h2>
+<body><p><h2>Help and CSS from </h2>
+www.w3schools.com <br>
+http://getbootstrap.com <br>
+http://stackoverflow.com <br>
+
 </p>
 
 
