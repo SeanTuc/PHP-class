@@ -4,7 +4,6 @@
     <list default="true" id="25082a3b-bbe2-41ac-a516-5a9e6f2294e4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo.php" afterPath="$PROJECT_DIR$/todo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todoDayDelete.php" afterPath="$PROJECT_DIR$/todoDayDelete.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,10 +86,10 @@
       <file leaf-file-name="todo.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="138" column="176" lean-forward="false" selection-start-line="138" selection-start-column="176" selection-end-line="138" selection-end-column="176" />
+            <state relative-caret-position="-187">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
-                <marker date="1487696717246" expanded="true" signature="220:234" ph="SELECT * FRO... ${$tableName}" />
+                <marker date="1487696948380" expanded="true" signature="220:234" ph="SELECT * FRO... ${$tableName}" />
               </folding>
             </state>
           </provider>
@@ -319,7 +318,7 @@
       <workItem from="1486575760705" duration="11471000" />
       <workItem from="1487435861648" duration="343000" />
       <workItem from="1487437207400" duration="43642000" />
-      <workItem from="1487645131342" duration="12844000" />
+      <workItem from="1487645131342" duration="13082000" />
     </task>
     <task id="LOCAL-00001" summary="PHP Commit one">
       <created>1486578203181</created>
@@ -440,11 +439,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487695420855</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fixed delete function variables">
+      <created>1487696741583</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1487696741583</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68300000" />
+    <option name="totallyTimeSpent" value="68538000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -872,10 +878,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="138" column="176" lean-forward="false" selection-start-line="138" selection-start-column="176" selection-end-line="138" selection-end-column="176" />
+        <state relative-caret-position="-187">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <marker date="1487696717246" expanded="true" signature="220:234" ph="SELECT * FRO... ${$tableName}" />
+            <marker date="1487696948380" expanded="true" signature="220:234" ph="SELECT * FRO... ${$tableName}" />
           </folding>
         </state>
       </provider>

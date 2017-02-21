@@ -119,7 +119,7 @@ $day = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saterd
                             }
                             ?></td>
                         <td>
-                            <!-- Adds button to edit todo details and tracks how many are missing data  -->
+                            <!-- Adds button to edit todos details and tracks how many are missing data  -->
                         <ul class="nav nav-pills" role="tablist">
                                 <li role="presentation"><a href="todo_details.php?contactID=<?php echo $todo['id'] ?>"><?php if ($missing== false)
                                         {
