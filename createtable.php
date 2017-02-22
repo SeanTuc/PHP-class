@@ -76,7 +76,7 @@ try {
     name VARCHAR(50),
     Homework VARCHAR(50),
     feedPet VARCHAR(50),
-    workoutTime VARCHAR(50) 
+    workoutTime VARCHAR(300) 
     )";
         $conn->exec($sql);
 

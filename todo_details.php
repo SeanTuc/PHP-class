@@ -110,7 +110,7 @@ file name
                         <th>  <?php if($isEmpty == 1 or $todolist['workoutTime']== null ){echo "<span class=' glyphicon glyphicon-play' aria-hidden='true'></span>";} else{ echo "<span class='glyphicon glyphicon-ok' aria-hidden='true'></span>";}     ?></th>
                         <th>
                             <div class="form-group">
-                                <label for="workoutTextField">Time spent Working out </label>
+                                <label for="workoutTextField">Todo notes </label>
                                 <input type="text" class="form-control" id="workoutTextField" name="workoutTextField"
                                        placeholder="Amount of time worked out"  value="<?php echo $todolist['workoutTime']; ?>">
                             </div>

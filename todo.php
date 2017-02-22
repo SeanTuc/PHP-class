@@ -67,7 +67,7 @@ $day = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saterd
                     <th>Username</th>
                     <th>Homework</th>
                     <th>Pet Care</th>
-                    <th>Workout Time</th>
+                    <th>Notes</th>
                     <th>Edit</th>
                     <th></th>
                     <th></th>
