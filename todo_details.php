@@ -24,6 +24,12 @@ if($usernameID == 0) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--
+    Author: Sean Tucker
+    Student #: 200352573
+    File Name: todo_details.php
+    Description: displays selected todo list and enables editing
+    -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Todo Details">

@@ -3,6 +3,12 @@ session_destroy()?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--
+    Author: Sean Tucker
+    Student #: 200352573
+    File Name: login.php
+    Description: login page
+    -->
     <meta charset="utf-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Todo Login">

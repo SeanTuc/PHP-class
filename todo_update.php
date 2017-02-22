@@ -1,4 +1,10 @@
 <?php
+/*
+Author: Sean Tucker
+Student #: 200352573
+File Name: todo_update.php
+Description: creates an new entry in the table or edits an existing table entry
+ */
 session_start();
 // setting database variables (custom connection) due to errors inserting information with include;
 $servername = "us-cdbr-azure-southcentral-f.cloudapp.net";

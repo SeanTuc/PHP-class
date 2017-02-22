@@ -1,5 +1,10 @@
 <?php
-//session_destroy();
+/*
+Author: Sean Tucker
+Student #: 200352573
+File Name: createtable.php
+Description: creates a table in mySQL
+ */
 session_start();
 $nameHolder = $_SESSION['userid'];
 $servername = "us-cdbr-azure-southcentral-f.cloudapp.net";
@@ -60,7 +65,7 @@ try {
     {
         $sql = "INSERT INTO login (username, password) VALUES ('$loginName', '$loginPassword')";
 
-        // use exec() because no results are returned
+        // execute sql statement
         $conn->exec($sql);
 
 
@@ -81,9 +86,9 @@ try {
         $conn->exec($sql);
 
         $sql = "INSERT INTO $tableName (userName, name) VALUES ('$loginName', '$nameHolder')";
-
-        // use exec() because no results are returned
         $conn->exec($sql);
+
+
         $header = 'Location: accountCreated.php';
         header($header);
         echo "Table todo list was created successfully   STOOOOOOOOOOOOOOOOPPPPPPPPPPPPP"; // trouble shooting purposes;

@@ -2,6 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--
+    Author: Sean Tucker
+    Student #: 200352573
+    File Name: createtable.php
+    Description: creates a table in mySQL
+    -->
     <meta charset="utf-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Todo Table Created">

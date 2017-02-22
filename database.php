@@ -1,4 +1,10 @@
 <?php
+/*
+Author: Sean Tucker
+Student #: 200352573
+File Name: database.php
+Description: connects to mySQL database
+ */
 // connection string version from class
 $dsn = 'mysql:host=us-cdbr-azure-southcentral-f.cloudapp.net;dbname=sean_tucker';
 $userName = 'b443d4f6b8b1a7';

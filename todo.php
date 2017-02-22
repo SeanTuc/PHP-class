@@ -1,4 +1,10 @@
 <?php
+/*
+Author: Sean Tucker
+Student #: 200352573
+File Name: todo.php
+Description: displays the todo list in a table
+ */
 session_start();
 include_once('database.php');
 if ($_SESSION['userid'] == null)
@@ -40,7 +46,7 @@ $day = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saterd
 
 </head>
 <header>
-    <h1 style="text-align: center;">Todo Login </h1>
+    <h1 style="text-align: center;">Todo Info </h1>
     <nav class="navbar navbar">
         <div class="container">
         <ul class="nav nav-tabs nav-justified">

@@ -1,4 +1,10 @@
 <?php
+/*
+Author: Sean Tucker
+Student #: 200352573
+File Name: createLogintable.php
+Description: does not get called upon creates a table in mySQL to store the seperate usernames and passwords
+ */
 session_start();
 $servername = "us-cdbr-azure-southcentral-f.cloudapp.net";
 $username = 'b443d4f6b8b1a7';
