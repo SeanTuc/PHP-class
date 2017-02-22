@@ -34,7 +34,7 @@
 <h2>Welcome to the "todo" list.</h2><p> It is an easy way to keep track of what you have done and how much you have done.
 To try out your todo list just sign in. If you do not have an account already just type in your desired username and password
 and click sign in. Your todo list will keep track of the time spent with your pet and what homework you did
-each day.<br> Note each new user gets there own todo list created
+each day.<br> Note each new user gets their own todo list created
 </p>
 
 

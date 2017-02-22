@@ -3,20 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="25082a3b-bbe2-41ac-a516-5a9e6f2294e4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accountCreated.php" afterPath="$PROJECT_DIR$/accountCreated.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.css" afterPath="$PROJECT_DIR$/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/createLogintable.php" afterPath="$PROJECT_DIR$/createLogintable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/createtable.php" afterPath="$PROJECT_DIR$/createtable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database.php" afterPath="$PROJECT_DIR$/database.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/invalidUserName.php" afterPath="$PROJECT_DIR$/invalidUserName.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logout.php" afterPath="$PROJECT_DIR$/logout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/references.php" afterPath="$PROJECT_DIR$/references.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo.php" afterPath="$PROJECT_DIR$/todo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todoDayDelete.php" afterPath="$PROJECT_DIR$/todoDayDelete.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo_details.php" afterPath="$PROJECT_DIR$/todo_details.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo_update.php" afterPath="$PROJECT_DIR$/todo_update.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="393">
-              <caret line="36" column="65" lean-forward="false" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
+              <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -336,7 +323,7 @@
       <workItem from="1487435861648" duration="343000" />
       <workItem from="1487437207400" duration="43642000" />
       <workItem from="1487645131342" duration="22247000" />
-      <workItem from="1487722385775" duration="3634000" />
+      <workItem from="1487722385775" duration="3731000" />
     </task>
     <task id="LOCAL-00001" summary="PHP Commit one">
       <created>1486578203181</created>
@@ -513,11 +500,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487723963499</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary=" adding comments">
+      <created>1487734290344</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1487734290344</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81337000" />
+    <option name="totallyTimeSpent" value="81434000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -975,7 +969,7 @@
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
-          <caret line="36" column="65" lean-forward="false" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
+          <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
           <folding />
         </state>
       </provider>
